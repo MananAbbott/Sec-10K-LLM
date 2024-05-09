@@ -1,0 +1,15 @@
+<!-- filings/templates/filings/results.html -->
+<html>
+<head>
+    <title>Analysis Results</title>
+</head>
+<body>
+    <h1>Results for {{ ticker }}</h1>
+    {% for key, value in insights.items %}
+        <h2>{{ key }}</h2>
+        <!-- Display plot image if exists -->
+        <img src="/results/{{ ticker }}/{{ key }}.png" alt="{{ key }} plot">
+    {% endfor %}
+    <a href="/">Back</a>
+</body>
+</html>

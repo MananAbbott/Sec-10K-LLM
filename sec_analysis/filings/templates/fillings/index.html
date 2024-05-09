@@ -1,0 +1,14 @@
+<!-- filings/templates/filings/index.html -->
+<html>
+<head>
+    <title>SEC Filings Analysis</title>
+</head>
+<body>
+    <h1>SEC 10-K Filings Analysis</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form }}
+        <button type="submit">Analyze</button>
+    </form>
+</body>
+</html>
